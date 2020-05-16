@@ -14,7 +14,8 @@ def get_K(path,K):
     X_test = np.load('test_data.npy')
     # load input image and change it to numpy array
     image = Image.open(path)
-    query = asarray(image)
+    query = asarray(image)[:,:,0].reshape(28,28)
+    print(query.shape)
     # reshape
     X_test = X_test.reshape(10000,28,28,1)
     # encode the test image set and query

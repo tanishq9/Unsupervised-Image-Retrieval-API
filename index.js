@@ -37,7 +37,7 @@ function deleteFiles(filePath) {
     });
 }
 
-// Index route : @GET method to access
+// File Upload Route 
 app.post("/file_upload", (req, res) => {    
     
     // set up the formidable package to handle images from request parameter
@@ -80,7 +80,7 @@ app.post("/file_upload", (req, res) => {
             console.log("File Format Supported.")
             
             // spawn out python script with required arguments
-            K = 3
+            K = 9
             let options={
                 args: [newPath, K]
             }  
@@ -93,6 +93,7 @@ app.post("/file_upload", (req, res) => {
                     // delete processed files
                     deleteFiles(newFileName)
                     res.send("Choose Images ONLY From MNIST Dataset.");
+                    return;
                 }
                 deleteFiles(newFileName)
                 res.send(data);
@@ -101,6 +102,43 @@ app.post("/file_upload", (req, res) => {
     });
 });
 
+// Some Test Routes
+
+app.get("/image0", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_0.png"));
+});
+
+app.get("/image1", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_1.png"));
+});
+
+app.get("/image2", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_2.png"));
+});
+
+app.get("/image3", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_3.png"));
+});
+
+app.get("/image4", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_4.png"));
+});
+
+app.get("/image5", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_5.png"));
+});
+
+app.get("/image6", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_6.png"));
+});
+
+app.get("/image7", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_7.png"));
+});
+
+app.get("/image8", (req, res) => {
+    res.sendFile(path.join(__dirname, "./output_images/output_image_8.png"));
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
