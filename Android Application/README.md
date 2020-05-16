@@ -1,6 +1,5 @@
 <h3><p align=center>For Demonstration 'K' has been set to 9</p></h3>
-<br>
-<br>
+
 <h3><p align=center>• Select the input image and let the API analyze it.</p></h3>
 <p align=center>
 <img src="https://user-images.githubusercontent.com/35667308/82132111-f0279c00-97f9-11ea-9e15-2749ec0f9691.png">
@@ -14,5 +13,7 @@
 <img src="https://user-images.githubusercontent.com/35667308/82132113-f0279c00-97f9-11ea-8ae3-357b86324529.png">
 </p>
 <br>
+<h2><a href="https://www.youtube.com/watch?v=DFw27Bbxxos">Video Link for Demonstration</a></h2>
+<br>
 
-## Made with :heart: by Tanishq Saluja
+### Made with :heart: by Tanishq Saluja
