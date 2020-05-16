@@ -13,7 +13,6 @@
 <img src="https://user-images.githubusercontent.com/35667308/82132113-f0279c00-97f9-11ea-8ae3-357b86324529.png">
 </p>
 <br>
-<h2><a href="https://www.youtube.com/watch?v=DFw27Bbxxos">Video Link for Demonstration</a></h2>
-<br>
+<h2><p align=center><a href="https://www.youtube.com/watch?v=DFw27Bbxxos">Video Link for Demonstration</a></p></h2>
 
 ### Made with :heart: by Tanishq Saluja
